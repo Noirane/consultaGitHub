@@ -14,6 +14,7 @@ const ReposContainer = props => {
                     <Repo onClick={() => window.location.href(repo?.html_url)} key={repo?.id}>
                         <h2>{repo?.name}</h2>
                         <p>{repo?.description}</p>
+                      
                     </Repo>
                 ))}
             </ListOfReposContainer>

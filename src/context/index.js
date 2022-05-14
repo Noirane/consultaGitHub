@@ -4,14 +4,14 @@ export const context = createContext();
 
 export const ContextProvider = (props) => {
     const [userData, setUserData] = useState({});
-    const [userRepos, setUserRepos] = useState([]);
+    const [repos, setRepos] = useState({});
 
     return (
         <context.Provider value={{
             userData,
-            userRepos,
+            repos,
             setUserData,
-            setUserRepos
+            setRepos
         }}>
             {props.children}
         </context.Provider>

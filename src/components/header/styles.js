@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 export const HeaderSection = styled.header`
-    width: 400px;
+    width: 600px;
     height: 130px;
-    background: rgba(255,255,255, .2);
-    border-radius: 10px;
+    background: rgba(0,0,0, .2);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 0;
 
-    @media (max-width: 430px) {
+
+  
+
+    @media screen and (max-width: 600px) {
         width: 300px;
     } 
+
+    @media screen and (max-width: 600px){
+        width: 300px;
+    }
 `
 
 export const HeaderTitle = styled.h1`
@@ -35,18 +42,19 @@ export const HeaderInputContainer = styled.div`
         height: 30px;
         border-radius: 15px;
         border: none;
-        background: #FF7A00;
+        background: white;
         margin-left: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #FFF;
+        color: #fc0fc0;
         transition: ease .3s;
 
         &:hover {
             transform: scale(1.05);
             transition: ease .3s;
             cursor: pointer;
+            background: pink;
         }
     }
 `
@@ -84,5 +92,10 @@ export const HeaderSearchButton = styled.button`
         transform: scale(1.05);
         transition: ease .3s;
         cursor: pointer;
+       
     }
+
+
+    
+
 `
