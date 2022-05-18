@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
 
 import Container from "../components/container";
-import FollowingContainer from "../components/followingContainer";
+import FollowersContainer from "../components/followersContainer";
 
 import { context } from '../context';
 
-const Following = props => {
+const Followers = props => {
     const ctx = useContext(context);
 
     return (
         <Container>
-            <FollowingContainer name={ctx.userData?.name} following={ctx.following} />
+            <FollowersContainer name={ctx.userData?.name} followers={ctx.followers} />
         </Container>
     );
     }
 
 
-export default Following;
+export default Followers;

@@ -17,13 +17,13 @@ const UserNumbers = props => {
                 <h2>Repositórios</h2>
             </NumberContainer>
 
-            <NumberContainer>
+            <NumberContainer onClick={() => handleOnClick('/followers')} >
                 <h1>{props?.followers}</h1>
                 <h2>Seguidores</h2>
             </NumberContainer>
 
-            <NumberContainer>
-                <h1>{props?.following}</h1>
+            <NumberContainer onClick={() => handleOnClick('/following')}>
+                <h1>{props?.following }</h1>
                 <h2>Seguindo</h2>
             </NumberContainer>
         </Container>
